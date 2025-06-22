@@ -79,4 +79,4 @@ The rendered audio files in `generated_audio/` were generated using the FluidR3_
 
 ### Code, metadata & MIDI data
 
-Everything else in this repository—code, metadata, MIDI generation logic, and documentation—is released under the MIT License. See the [`LICENSE`](./LICENSE) file for full details.
+Everything else in this repository—code, metadata, MIDI generation logic, and documentation—is released under the MIT License. See the [`LICENSE`](./LICENSE.md) file for full details.

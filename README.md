@@ -8,14 +8,13 @@ This dataset contains **12,261 audio files** representing isolated musical notes
 
 You can access the full dataset via Hugging Face:
 
-🔗 **Dataset Homepage**:  
-https://huggingface.co/datasets/mrBird006/piano-chord-decting-dataset
+🔗 **Dataset Homepage:**  
+[https://huggingface.co/datasets/mrBird006/piano-chord-decting-dataset](https://huggingface.co/datasets/mrBird006/piano-chord-decting-dataset)
 
-📥 **API Access**:  
+📥 **API Access:**  
 ```bash
-curl -X GET \
-  "https://datasets-server.huggingface.co/first-rows?dataset=mrBird006%2Fpiano-chord-decting-dataset&config=default&split=train"
-
+curl -X GET   "https://datasets-server.huggingface.co/first-rows?dataset=mrBird006%2Fpiano-chord-decting-dataset&config=default&split=train"
+```
 
 Each audio file is in **WAV format**, with a consistent naming convention encoding musical parameters.
 
@@ -23,25 +22,22 @@ Each audio file is in **WAV format**, with a consistent naming convention encodi
 
 ## 🔤 Audio File Naming Pattern
 
-```
+```text
 notes_[midi]_t[tempo]_d[duration].wav
 ```
 
-
 Where:
 
-- `<midi>`: MIDI number of the note or notes played. A single note is indicated by its number (e.g. `60`), chords by multiple values separated with hyphens (e.g. `60-64-67`).
-- `<tempo>`: Tempo in beats per minute (BPM), e.g., `60`, `120`, `180`.
-- `<duration>`: Note duration in beats, such as:
-  - `0.25` → sixteenth note
-  - `0.5`  → eighth note
-  - `1.0`  → quarter note
-  - `2.0`  → half note
+- `<midi>`: MIDI number of the note or notes played. A single note is indicated by its number (e.g. `60`), chords by multiple values separated with hyphens (e.g. `60-64-67`).  
+- `<tempo>`: Tempo in beats per minute (BPM), e.g., `60`, `120`, `180`.  
+- `<duration>`: Note duration in beats, such as:  
+  - `0.25` → sixteenth note  
+  - `0.5`  → eighth note  
+  - `1.0`  → quarter note  
+  - `2.0`  → half note  
 
-📌 Example:
-```
-notes_100_t120_d0.25.wav → MIDI note 100, tempo 120 BPM, duration 0.25 (sixteenth note)
-```
+📌 **Example:**  
+``notes_100_t120_d0.25.wav → MIDI note 100, tempo 120 BPM, duration 0.25 (sixteenth note)``
 
 ---
 
@@ -67,13 +63,14 @@ The file `dataset_metadata.csv` contains detailed information per audio sample. 
 
 ## 📦 Usage Ideas
 
-- Instant Chord recognition
+- Instant chord recognition
 
 ---
 
 ## ⚠️ License
 
 ### Audio files
+
 The rendered audio files in `generated_audio/` were generated using the FluidR3_GM.sf2 SoundFont by Frank Wen and are licensed under Creative Commons Attribution 3.0 (CC BY 3.0). When using or redistributing these files, you must credit the author and link to the license:
 
 - **SoundFont:** FluidR3_GM.sf2 by Frank Wen  
@@ -81,5 +78,5 @@ The rendered audio files in `generated_audio/` were generated using the FluidR3_
 - **URL:** https://creativecommons.org/licenses/by/3.0/legalcode  
 
 ### Code, metadata & MIDI data
-Everything else in this repository—code, metadata, MIDI generation logic and documentation—is released under the MIT License. See the [`LICENSE`](./LICENSE) file for full details.
 
+Everything else in this repository—code, metadata, MIDI generation logic, and documentation—is released under the MIT License. See the [`LICENSE`](./LICENSE) file for full details.

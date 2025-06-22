@@ -24,7 +24,7 @@ Each audio file is in **WAV format**, with a consistent naming convention encodi
 ## 🔤 Audio File Naming Pattern
 
 ```
-notes_<midi>_t<tempo>_d<duration>.wav
+notes_[midi]_t[tempo]_d[duration].wav
 ```
 
 
